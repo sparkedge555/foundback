@@ -1,1 +1,128 @@
+/* ===== ROOT COLORS ===== */
+:root {
+    --primary: #1E3A8A;
+    --accent: #16A34A;
+    --white: #FFFFFF;
+    --light-bg: #F3F4F6;
+}
 
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.light {
+    background: var(--light-bg);
+}
+
+.center {
+    text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: var(--primary);
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: var(--primary);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.primary {
+    background: var(--accent);
+    color: white;
+}
+
+.secondary {
+    background: white;
+    color: var(--primary);
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+/* ===== STEPS ===== */
+.steps {
+    display: grid;
+    gap: 20px;
+}
+
+.step {
+    background: var(--light-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ===== CHECKLIST ===== */
+.checklist li {
+    margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
